@@ -27,3 +27,7 @@ export class SupabaseDriver {
 		return response.error ? { status: 500, data: [] } : { status: response.status, data: response.data };
 	}
 }
+
+export class MockDriver {
+	// TODO: dockerでnginxを使ってモックサーバーを立てて、そこに対する操作を持たせたクラスをここに作る
+}
